@@ -1,0 +1,50 @@
+{
+  "name": "react-shallow-output",
+  "description": "A react utility to simplify testing shallow rendered components.",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jasonbellamy/react-shallow-output",
+  "author": {
+    "name": "Jason Bellamy",
+    "email": "j@sonbellamy.com",
+    "url": "http://jasonbellamy.com"
+  },
+  "contributors": [
+    {
+      "name": "Simon Smith",
+      "email": "me@simonsmith.io",
+      "url": "https://github.com/simonsmith"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasonbellamy/react-shallow-output.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jasonbellamy/react-shallow-output/issues"
+  },
+  "license": "MIT",
+  "main": "dist/react-shallow-output",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "build": "babel -d dist src",
+    "clean": "rm -rf dist && mkdir dist",
+    "watch": "babel -w -d dist src",
+    "test": "mocha --compilers js:babel/register",
+    "preversion": "npm run clean && npm run build",
+    "postpublish": "git push && git push --tag"
+  },
+  "devDependencies": {
+    "babel": "^5.8.9",
+    "core-js": "^0.9.6",
+    "react": "^0.13.3"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "test",
+    "testing",
+    "shallow"
+  ]
+}
