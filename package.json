@@ -1,7 +1,7 @@
 {
   "name": "react-shallow-output",
   "description": "A react utility to simplify testing shallow rendered components.",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "homepage": "https://github.com/jasonbellamy/react-shallow-output",
   "author": {
     "name": "Jason Bellamy",
