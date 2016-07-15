@@ -1,4 +1,5 @@
-import React from 'react/addons';
+import React from 'react';
+import TestUtils from 'react-addons-test-utils';
 
 /**
  * Renders and returns the output of a shallow react component
@@ -9,7 +10,7 @@ import React from 'react/addons';
  * @return {object} Object containing the shallow rendered components output.
  */
 const shallowOutput = (component, props, ...children) => {
-  const renderer = React.addons.TestUtils.createRenderer();
+  const renderer = TestUtils.createRenderer();
   renderer.render(React.createElement(component, props, children));
   return renderer.getRenderOutput();
 };

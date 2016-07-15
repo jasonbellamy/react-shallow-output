@@ -38,7 +38,12 @@
   "devDependencies": {
     "babel": "^5.8.9",
     "core-js": "^0.9.6",
-    "react": "^0.13.3"
+    "react": "^15.2.1",
+    "react-addons-test-utils": "^15.2.1"
+  },
+  "peerDependencies": {
+    "react": "15.x",
+    "react-addons-test-utils": "15.x"
   },
   "keywords": [
     "react",
