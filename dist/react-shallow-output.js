@@ -6,9 +6,13 @@ Object.defineProperty(exports, '__esModule', {
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _reactAddons = require('react/addons');
+var _react = require('react');
 
-var _reactAddons2 = _interopRequireDefault(_reactAddons);
+var _react2 = _interopRequireDefault(_react);
+
+var _reactAddonsTestUtils = require('react-addons-test-utils');
+
+var _reactAddonsTestUtils2 = _interopRequireDefault(_reactAddonsTestUtils);
 
 /**
  * Renders and returns the output of a shallow react component
@@ -23,8 +27,8 @@ var shallowOutput = function shallowOutput(component, props) {
     children[_key - 2] = arguments[_key];
   }
 
-  var renderer = _reactAddons2['default'].addons.TestUtils.createRenderer();
-  renderer.render(_reactAddons2['default'].createElement(component, props, children));
+  var renderer = _reactAddonsTestUtils2['default'].createRenderer();
+  renderer.render(_react2['default'].createElement(component, props, children));
   return renderer.getRenderOutput();
 };
 
